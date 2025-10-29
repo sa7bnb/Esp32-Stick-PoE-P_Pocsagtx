@@ -1,0 +1,10 @@
+     CC1101:
+   CS   -> GPIO15
+   SCK  -> GPIO14
+   MISO -> GPIO12
+   MOSI -> GPIO13
+   GDO0 -> GPIO4
+   GDO2 -> GPIO2
+   VCC  -> 3.3V
+   GND  -> GND
+   LED  -> GPIO33 

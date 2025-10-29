@@ -1,0 +1,35 @@
+📡 GET Request:
+http://192.168.1.104/api/send?ric=1234567&message=Hello%20World
+```
+
+**OBS:** Mellanslag i meddelandet måste URL-enkodas till `%20` eller `+`
+
+## 💡 Olika sätt att skicka requesten:
+
+### 1. **Direkt i webbläsaren:**
+```
+http://192.168.1.104/api/send?ric=1234567&message=Hello%20World
+Webbläsaren kommer fråga efter användarnamn och lösenord (admin / password)
+2. Med curl (från terminal/kommandoprompt):
+bashcurl -u admin:admin123 "http://192.168.1.104/api/send?ric=1234567&message=Hello%20World"
+3. Med wget:
+bashwget --user=admin --password=password "http://192.168.1.104/api/send?ric=1234567&message=Hello%20World"
+4. Med Python:
+pythonimport requests
+
+response = requests.get(
+    'http://192.168.1.104/api/send',
+    params={'ric': 1234567, 'message': 'Hello World'},
+    auth=('admin', 'admin123')
+)
+
+print(response.json())
+```
+
+### 5. **Med Node-RED (http request node):**
+```
+URL: http://192.168.1.104/api/send?ric=1234567&message=Hello World
+Method: GET
+Authentication: Basic
+Username: admin
+Password: password
