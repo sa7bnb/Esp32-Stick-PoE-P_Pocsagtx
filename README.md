@@ -49,7 +49,7 @@ GND      →  GND
 
 ### PTT Output
 ```
-GPIO33   →  Externt slutsteg (PTT Input)
+GPIO33   →  Externt slutsteg trig / Status led
 GND      →  GND
 
 Signal: 3.3V logik, aktiv HÖG
